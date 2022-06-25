@@ -15,7 +15,5 @@ public class Operators_prac1 {
             System.out.println(num);
         }
 
-        
-
     }
 }

@@ -11,7 +11,7 @@ public class LogicalOp {
         System.out.println("2 또는 3의 배수인가? " + result);
 
         result = !(num1 != 0);
-        System.out.println("0인가? " + result)
+        System.out.println("0인가? " + result);
 
     }
 }
