@@ -29,3 +29,4 @@ public class Triangle {
         tri1.print_Triangle();
     }
 }
+
