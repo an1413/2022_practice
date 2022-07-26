@@ -3,6 +3,9 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
 
 public class APITest {
     public static void main(String[] args) throws Exception {
@@ -12,11 +15,11 @@ public class APITest {
         String authKey = "fktJ7XjTmnwAHrf%2FlOHRs9yYEYnozadHjnRyNkLj74bnbsFi%2BYZMweZ1OdPl0rgJMmlNSP1gXjuOjkffEN1Sgw%3D%3D"; // 본인 서비스 키
 
 		// 구하고자 하는 시간과 좌표 대입
-        String nx = "69";
-        String ny = "100";
-        String baseDate = "20220724";
+        String nx = "60";
+        String ny = "120";
+        String baseDate = "20220725";
         String baseTime = "1500";
-        String numOfRows="13";
+        String numOfRows="225";
         String dataType = "JSON";
 
         StringBuilder urlBuilder = new StringBuilder(apiURL);
