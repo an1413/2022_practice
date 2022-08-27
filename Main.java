@@ -1,23 +1,22 @@
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.io.IOException;
 import java.util.Scanner;
-
+import java.util.Arrays;
+ 
 public class Main {
-    public static void main(String[] args) throws IOException{
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    public static void main(String[] args) {
+        int arr[] = {5,1,2,3,4};
 
-        String A = br.readLine();
-        String B = br.readLine();
-        String C = br.readLine();
+        for (int i = 0; i<arr.length - 1; i++){
+            for (int j = i+1; j<arr.length; j++){
+                if(arr[i] > arr[j]){
+                    int temp = arr[j];
+                    arr[j] = arr[i];
+                    arr[i] = temp;
+                }
+            }
+        }
 
-        int Aa = Integer.parseInt(A);
-        int Bb = Integer.parseInt(B);
-        int Cc = Integer.parseInt(C);
-
-        System.out.println((Aa+Bb)%Cc);
-        System.out.println((Aa+Bb)%Cc);
-        System.out.println((Aa+Bb)%Cc); 
-
+        for(int i = 0; i<arr.length; i++){
+            System.out.println(arr[i]);
+        }
     }
 }
