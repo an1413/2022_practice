@@ -1,31 +1,23 @@
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.io.IOException;
+import java.util.*;
+import java.io.*;
+
+
 public class Main {
-    public static void main(String[] args) throws IOException{
-       BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+public static void main(String args[]){
+    
+    Scanner sc1 = new Scanner(System.in);
 
-       int N = Integer.parseInt(br.readLine());
-       int[] arr = new int[N];
+    int A,B;
 
-       for(int i = 0; i<N; i++){
-        arr[i] = Integer.parseInt(br.readLine());
-       }
+    A = sc1.nextInt();
+    B = sc1.nextInt();
 
-       //select sort
-       for(int i = 0; i<N-1; i++){
-        for(int j = i+1; j<N; j++){
-            if(arr[i] > arr[j]){
-                int temp = arr[j];
-                arr[j] = arr[i];
-                arr[i] = temp;
-            }
-        }
-       }
 
-       for(int val : arr){
-        System.out.println(val);
-       }
+    System.out.println(A*(B%10));
+    System.out.println(A*((B%100)/10));
+    System.out.println(A*(B/100));
+    System.out.println(A*B);
 
-    }
+
+ }
 }
