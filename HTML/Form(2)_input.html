@@ -5,27 +5,27 @@
 <head>
   <meta charset="UTF-8">
   <title>Form - Input</title>
-  <link rel="stylesheet" href="https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="./styles.css">
+  
 </head>
 <body>
     
  <form action="" method="GET">
 
-    <label for="name" >이름</label>
-    <input type="text" id="name" placeholder="이름"/>
-    <label for="id">아이디</label>
-    <input type="text" id="id" placeholder="아이디"/>
-    <label for="my_email">이메일</label>
-    <input type="email" id="my_email" placeholder="honggildong@korea.com"/>
-    <label for="password">비밀번호</label>
-    <input type="password" id="password" placeholder="최소 6자, 최대 12자" minlength="6" maxlength="12"/>
- 
-    <input type="text" placeholder="01*-****-****"/>
+    <input type="radio" name="subscription111" value ="구독" id="subscribeed"/>
+    <label for="subscribeed">구독중</label>
+    <input type="radio" name="subscription111" value="미구독" id="unsubscribed"/>
+    <label for="unsubscribed">미구독</label>
 
-    <input type="number" placeholder="만 12세 이상" min="12"/>
+    <br> <hr>
+    <input type="radio" name="boolean_apple" value="apple"/>
+    <label for="apple">사과</label>
 
-    <input type="file" placeholder="No file chosen" accept=".png, .jpg, .svg"/>
+    <input type="radio" name="boolean_apple"value="unapple" />
+    <label for="unapple">안사과</label>
+
+    <button type="submit">
+      Submit
+    </button>
 
 </form>
 </body>
